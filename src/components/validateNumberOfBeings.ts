@@ -1,9 +1,9 @@
-const validateNumberOfBeings: (numberOfBeings: string) => string[] = (
+const validateNumberOfBeings: (numberOfBeings: number) => string[] = (
   numberOfBeings
 ) => {
   const errors = [];
 
-  if (!/^\d+$/.test(numberOfBeings) || isNaN(Number(numberOfBeings))) {
+  if (isNaN(numberOfBeings)) {
     errors.push("Number of beings must be a valid number.");
   }
 

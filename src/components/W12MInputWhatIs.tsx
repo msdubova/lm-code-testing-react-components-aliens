@@ -11,7 +11,7 @@ const W12MInputWhatIs: React.FC<{ validate: (value: string) => string[] }> = ({
   };
 
   const errorMessages = validate(whatIs);
-  const errorMessage = errorMessages.join(", "); // Join the array into a single string
+  const errorMessage = errorMessages.join(", ");
 
   return (
     <div>

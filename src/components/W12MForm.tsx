@@ -62,7 +62,7 @@ const W12MForm: React.FC = () => {
         <W12MInputNumberOfBeings
           state={numberOfBeings}
           setState={(value) => setNumberOfBeings(value)}
-          validate={validateNumberOfBeings}
+          validate={(value) => validateNumberOfBeings(parseInt(value, 10))}
         />
         <W12MInputWhatIs validate={validateWhatIs} />
         <W12MInputReasonForSparing
